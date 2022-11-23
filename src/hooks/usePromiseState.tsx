@@ -11,7 +11,7 @@ const usePromiseState = (initialState: any) => {
     callback: () => { return; },
   });
 
-  const setPromiseState = ({ value, callback = () => { return; } }: { value: any; callback: () => void })  => {
+  const setPromiseState = ( value : any, callback: () => void = () => { return; } )  => {
     setStorage({ state: value, callback });
   };
 
