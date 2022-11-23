@@ -3,7 +3,7 @@ Useful hooks you can use in asynchronous processes.
 
 # usePromiseState
 
-State güncellemlerinde useEffect kullanmadan, güncelleme tamamlandıktan sonra geri bildirimi alabilirsiniz. Bu sayede ardışık State güncellemelerinde yönetimi kolaylaştırır.
+You can get the callback after the update is complete without using useEffect on state updates. In this way, it simplifies management in consecutively State updates.
 
 
 #### Basic Usage
@@ -36,8 +36,7 @@ export default function App() {
 
 # useQueueState
 
-Asenkron bir biçimde gerçekleşen state güncellemelerini kuyruklayarak senkron bir biçimde güncellenmesini sağlamaktadır.
-
+It provides a synchronous update of state updates that occur asynchronously by queuing them.
 
 #### Basic Usage
 
